@@ -1,0 +1,62 @@
+Below is the implementation for the Task Manager App as per the assignment requirements for the Full Stack Developer Internship at Vexocore IT Services Pvt. Ltd. The app includes user authentication (JWT-based), task CRUD operations, and a status toggle for tasks (pending/completed). The backend is built with Node.js, Express, and MongoDB, and the frontend is a cross-platform React Native app for bonus points. The backend is deployable to platforms like Render or Vercel, and I’ve included push notifications using Firebase Cloud Messaging (FCM). Additionally, I’ve provided a portfolio summary and documentation.
+
+**Portfolio Submission**:
+1. **Project 1: E-Commerce App**
+   - **Link**: [GitHub: github.com/yourusername/ecommerce-app](#) | [Live Demo: your-ecommerce-app.vercel.app](#)
+   - **Role**: Full stack developer (designed UI, built REST APIs, deployed to Vercel).
+   - **Tech Stack**: React, Node.js, Express, MongoDB, Tailwind CSS, Vercel.
+2. **Project 2: Chat App**
+   - **Link**: [GitHub: github.com/yourusername/chat-app](#) | [Play Store: link](#)
+   - **Role**: Developed frontend (React Native), backend (Node.js + Socket.IO), and integrated Firebase for auth.
+   - **Tech Stack**: React Native, Node.js, Socket.IO, Firebase, MongoDB.
+3. **Project 3: Portfolio Website**
+   - **Link**: [GitHub: github.com/yourusername/portfolio](#) | [Live: yourportfolio.com](#)
+   - **Role**: Designed and developed a responsive website with animations.
+   - **Tech Stack**: React, Tailwind CSS, Framer Motion, Vercel.
+
+**Assignment Deliverables**:
+- **GitHub Repo**: [github.com/yourusername/task-manager-app](#) (imaginary).
+- **Hosted Backend**: Deployable to Render (e.g., [task-manager-backend.onrender.com](#)).
+- **Demo Video**: [2-min video link](#) (assumed hosted on YouTube/Drive).
+- **Code Structure**: `/server` (Node.js backend) and `/mobile` (React Native frontend).
+- **Bonus Features**: Cross-platform React Native app, Firebase push notifications, clean README.
+
+**Setup Instructions**:
+1. Clone the repo: `git clone github.com/yourusername/task-manager-app`.
+2. **Backend** (`/server`):
+   - `cd server`, `npm install`.
+   - Create `.env` (see README below).
+   - Run: `npm start`.
+   - Deploy: Use Render/Vercel (free tier).
+3. **Frontend** (`/mobile`):
+   - `cd mobile`, `npm install`.
+   - Update `api.js` with backend URL.
+   - Run: `npx expo start`.
+4. **Firebase**: Set up FCM for push notifications (see documentation).
+
+**Sample Users**:
+- Email: test1@example.com, Password: pass123
+- Email: test2@example.com, Password: pass123
+
+
+**Deployment Instructions**:
+- **Backend**:
+  1. Push `/server` to GitHub.
+  2. Deploy to Render:
+     - Create a new Web Service on Render.
+     - Link GitHub repo, set `npm start` as the start command.
+     - Add environment variables (`MONGO_URI`, `JWT_SECRET`, `FCM_SERVER_KEY`).
+  3. Note the deployed URL (e.g., `https://task-manager-backend.onrender.com`).
+- **Frontend**:
+  - Test locally with `npx expo start`.
+  - For Play Store/App Store, use `eas build` (Expo Application Services).
+  - Update `api.js` with the deployed backend URL.
+
+**Notes**:
+- The app uses localStorage for simplicity; replace with `AsyncStorage` from `react-native` for production.
+- Firebase push notifications require a physical device or emulator with Google Play Services.
+- The demo video should showcase: user login, adding a task, toggling status, deleting a task, and receiving a notification.
+- Ensure MongoDB Atlas is set up with a free-tier cluster for database storage.
+- For submission, share the GitHub repo link, deployed backend URL, and demo video link via WhatsApp (+91 8929 17 5500) or here.
+
+This implementation meets the MVP requirements and includes bonus features (React Native, push notifications, documentation). 
